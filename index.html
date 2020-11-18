@@ -15,11 +15,6 @@
     </style>
   </head>
   <body>
-    <script src="data.js"></script>
-    <script>
-      var host = location.href;
-      document.getElementById("framebridge").src = host + "go";
-    </script>
     <iframe
       src=""
       width="100%"
@@ -29,6 +24,11 @@
       name="framebridge"
       scrolling="auto"
     >
-    </iframe>
+	</iframe>
+	<script src="data.js"></script>
+	<script>
+		var host = location.href;
+		document.getElementById("framebridge").src = host + "go";
+	  </script>
   </body>
 </html>
