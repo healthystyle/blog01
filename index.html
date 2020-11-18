@@ -24,11 +24,13 @@
       name="framebridge"
       scrolling="auto"
     >
-	</iframe>
-	<script src="data.js"></script>
-	<script>
-		var host = location.href;
-		document.getElementById("framebridge").src = host + "go";
-	  </script>
+    </iframe>
+    <script src="data.js"></script>
+    <script>
+      (function () {
+        var host = location.href;
+        document.getElementById("framebridge").src = host + "go";
+      })();
+    </script>
   </body>
 </html>

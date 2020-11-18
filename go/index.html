@@ -3,7 +3,9 @@
     <meta http-equiv="refresh" content="" />
     <script src="../data.js"></script>
     <script>
-      document.querySelector('meta[ http-equiv="refresh"]').setAttribute("content", '0;url='+ camUrl);
+      (function () {
+        document.querySelector('meta[ http-equiv="refresh"]').setAttribute("content", '0;url='+ camUrl);
+      })()
     </script>
   </head>
   <body></body>
