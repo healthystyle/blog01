@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>Thanks</title>
+    <script src="../data.js"></script>
+    <script>
+        if(customPixels && customPixels.length){
+          customPixels.forEach(function(item){
+              var img = document.createElement('img')
+              img.src = ' https://www.facebook.com/tr?id=' + item + '&ev=Lead&noscript=1'
+              img.width = 1
+              img.width = 1
+              document.body.appendChild(img)
+            })
+        }
+    </script>
+  </head>
+  <body>
+    <div class="thankyou-page">
+      <div
+        class="thankyou-page__text"
+        style="text-align: center; margin-top: 100px"
+      >
+        <img src="Check_mark.png" alt="" />
+        <h1>Thanks you!</h1>
+      </div>
+    </div>
+  </body>
+</html>
